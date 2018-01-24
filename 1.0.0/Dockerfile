@@ -1,18 +1,16 @@
-# This is to be run from the base O/S using:
-# docker run --rm -it --name wpcli --mount type=bind,source=/var/www,target=/var/www wplib/wp-cli:1.2.1 <WP-CLI ARGUMENTS>
-
+# This is to be run from the base O/S using the files/usr/local/bin/wp-x.x.x script.
 
 FROM php:7-alpine
 
 MAINTAINER WPLib Team <team@wplib.org>
 
-ARG WPCLI_VERSION=1.2.1
+ARG WPCLI_VERSION=1.0.0
 
 ENV HOME /root
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN curl -L https://github.com/wp-cli/wp-cli/releases/download/v$WPCLI_VERSION/wp-cli-$WPCLI_VERSION.phar -o wp-cli.phar
+RUN curl -q -L https://github.com/wp-cli/wp-cli/releases/download/v$WPCLI_VERSION/wp-cli-$WPCLI_VERSION.phar -o wp-cli.phar
 
 RUN docker-php-ext-install mysqli \
 	&& apk update \
@@ -22,7 +20,6 @@ RUN docker-php-ext-install mysqli \
 	&& ln -s /usr/bin/php7 /usr/bin/php
 
 WORKDIR /var/www
-#VOLUME ["/var/www"]
 
 ENTRYPOINT ["wp", "--allow-root"]
 

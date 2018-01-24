@@ -1,0 +1,2 @@
+#!/bin/bash
+exec /usr/bin/docker run --rm -it --name wpcli --mount type=bind,source=/var/www,target=/var/www wplib/wp-cli:1.1.0 "$@"
