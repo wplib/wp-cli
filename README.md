@@ -4,13 +4,13 @@ It currently provides versions 1.0.0, 1.1.0, 1.2.0 and 1.2.1.
 
 
 ## Supported tags and respective Dockerfiles
-`1.0.0` , `1.0.0`, `latest` _([1.0.0/Dockerfile](https://github.com/wplib/wp-cli-docker/blob/master/1.0.0/Dockerfile))_
-
-`1.1.0` , `1.1.0` _([1.1.0/Dockerfile](https://github.com/wplib/wp-cli-docker/blob/master/1.1.0/Dockerfile))_
+`1.2.1`, `1.2.1`, `latest` _([1.2.1/Dockerfile](https://github.com/wplib/wp-cli-docker/blob/master/1.2.1/Dockerfile))_
 
 `1.2.0`, `1.2.0` _([1.2.0/Dockerfile](https://github.com/wplib/wp-cli-docker/blob/master/1.2.0/Dockerfile))_
 
-`1.2.1`, `1.2.1` _([1.2.1/Dockerfile](https://github.com/wplib/wp-cli-docker/blob/master/1.2.1/Dockerfile))_
+`1.1.0` , `1.1.0` _([1.1.0/Dockerfile](https://github.com/wplib/wp-cli-docker/blob/master/1.1.0/Dockerfile))_
+
+`1.0.0` , `1.0.0` _([1.0.0/Dockerfile](https://github.com/wplib/wp-cli-docker/blob/master/1.0.0/Dockerfile))_
 
 
 ## Setup
