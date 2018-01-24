@@ -34,5 +34,5 @@ and run either...
 
 
 ## Additional notes:
-Running wp-cli within a Docker container relies on the scripts in _([1.2.0/Dockerfile](https://github.com/wplib/wp-cli-docker/blob/master/1.2.0/Dockerfile))_ to be placed under the `/usr/local/bin` directory of the Vagrant host. This will be performed automatically for you when using this as part of [WPLib-Box](https://github.com/wplib/wplib-box).
+Running wp-cli within a Docker container relies on the scripts in _([here](https://github.com/wplib/wp-cli-docker/blob/master/files/usr/local/bin))_ to be placed under the `/usr/local/bin` directory of the Vagrant host. This will be performed automatically for you when using this as part of [WPLib-Box](https://github.com/wplib/wplib-box).
 
