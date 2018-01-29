@@ -1,0 +1,12 @@
+{
+	"project": "wplib",
+	"name": "wp-cli",
+	"version": "1.0.0",
+	"majorversion": "1.0",
+	"latest": "",
+	"ports": "",
+	"volumes": "--mount type=bind,source=/var/www,target=/var/www",
+	"args": "",
+	"env": "WP_CLI_VERSION"
+}
+
