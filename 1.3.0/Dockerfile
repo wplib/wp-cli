@@ -4,7 +4,7 @@ FROM php:7-alpine
 
 MAINTAINER WPLib Team <team@wplib.org>
 
-ARG WPCLI_VERSION=1.2.0
+ARG WPCLI_VERSION=1.3.0
 
 ENV HOME /root
 
