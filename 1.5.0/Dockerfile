@@ -12,12 +12,12 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN curl -q -L https://github.com/wp-cli/wp-cli/releases/download/v$WPCLI_VERSION/wp-cli-$WPCLI_VERSION.phar -o wp-cli.phar
 
-RUN docker-php-ext-install mysqli \
-	&& apk update \
-	&& apk add sudo ncurses less \
-	&& cp wp-cli.phar /usr/local/bin/wp \
-	&& chmod +x /usr/local/bin/wp \
-	&& ln -s /usr/bin/php7 /usr/bin/php
+RUN docker-php-ext-install mysqli && \
+	apk update && \
+	apk add --no-cache sudo ncurses less && \
+	cp wp-cli.phar /usr/local/bin/wp && \
+	chmod +x /usr/local/bin/wp && \
+	ln -s /usr/bin/php7 /usr/bin/php
 
 WORKDIR /var/www
 
