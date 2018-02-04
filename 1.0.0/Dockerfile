@@ -1,6 +1,6 @@
 # This is to be run from the base O/S using the files/usr/local/bin/wp-x.x.x script.
 
-FROM php:7-alpine
+FROM php:7.0-alpine
 
 MAINTAINER WPLib Team <team@wplib.org>
 
