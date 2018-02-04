@@ -5,14 +5,11 @@ FROM php:7.0-alpine
 MAINTAINER WPLib Team <team@wplib.org>
 
 ARG WPCLI_VERSION=1.4.1
-
 ENV HOME /root
-
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN curl -q -L https://github.com/wp-cli/wp-cli/releases/download/v$WPCLI_VERSION/wp-cli-$WPCLI_VERSION.phar -o wp-cli.phar
-
-RUN docker-php-ext-install mysqli && \
+RUN curl -q -L https://github.com/wp-cli/wp-cli/releases/download/v$WPCLI_VERSION/wp-cli-$WPCLI_VERSION.phar -o wp-cli.phar && \
+	docker-php-ext-install mysqli && \
 	apk update && \
 	apk add --no-cache sudo ncurses less && \
 	cp wp-cli.phar /usr/local/bin/wp && \
