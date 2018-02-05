@@ -4,8 +4,10 @@
 	"version": "1.4.1",
 	"majorversion": "1.4",
 	"latest": "0",
+	"network": "--network wplibbox",
 	"ports": "",
 	"volumes": "--mount type=bind,source=/var/www,target=/var/www",
+	"restart": "--restart unless-stopped",
 	"args": "",
 	"env": "WP_CLI_VERSION"
 }
