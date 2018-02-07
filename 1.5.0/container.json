@@ -7,7 +7,7 @@
 	"network": "--network wplibbox",
 	"ports": "",
 	"volumes": "--mount type=bind,source=/var/www,target=/var/www",
-	"restart": "--restart unless-stopped",
+	"restart": "--restart no",
 	"args": "",
 	"env": "WP_CLI_VERSION"
 }
