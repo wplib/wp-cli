@@ -4,6 +4,7 @@
 	"version": "1.2.1",
 	"majorversion": "1.2",
 	"latest": "0",
+	"class": "admin",
 	"network": "--network wplibbox",
 	"ports": "",
 	"volumes": "--mount type=bind,source=/var/www,target=/var/www",
