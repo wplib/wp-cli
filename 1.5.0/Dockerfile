@@ -16,6 +16,7 @@ RUN curl -q -L https://github.com/wp-cli/wp-cli/releases/download/v$WPCLI_VERSIO
 	chmod +x /usr/local/bin/wp && \
 	ln -s /usr/bin/php7 /usr/bin/php
 
+COPY container.json /etc/container.json
 WORKDIR /var/www
 
 ENTRYPOINT ["wp", "--allow-root"]
