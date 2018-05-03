@@ -4,7 +4,7 @@ FROM php:7.0-alpine
 
 MAINTAINER WPLib Team <team@wplib.org>
 
-ARG WPCLI_VERSION=1.5.0
+ARG WPCLI_VERSION=1.5.1
 ENV HOME /root
 ENV DEBIAN_FRONTEND noninteractive
 
