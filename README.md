@@ -19,7 +19,7 @@
 
 # WP-CLI Docker Container for WPLib Box
 This is the repository for the [WP-CLI](https://github.com/wp-cli/wp-cli) Docker container implemented for [WPLib-Box](https://github.com/wplib/wplib-box).
-It currently provides versions 1.0.0, 1.1.0, 1.2.1, 1.3.0, 1.4.1 & 1.5.1
+It currently provides versions 1.0.x 1.1.x 1.2.x 1.3.x 1.4.x 1.5.x
 
 ## Supported tags and respective Dockerfiles
 `1.5.1`, `1.5`, `latest` _([1.5.1/Dockerfile](https://github.com/wplib/wp-cli-docker/blob/master/1.5.1/Dockerfile))_
