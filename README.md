@@ -1,3 +1,10 @@
+![wp-cli 1.0.x](https://img.shields.io/badge/wp-cli-1.0.x-green.svg)
+![wp-cli 1.1.x](https://img.shields.io/badge/wp-cli-1.1.x-green.svg)
+![wp-cli 1.2.x](https://img.shields.io/badge/wp-cli-1.2.x-green.svg)
+![wp-cli 1.3.x](https://img.shields.io/badge/wp-cli-1.3.x-green.svg)
+![wp-cli 1.4.x](https://img.shields.io/badge/wp-cli-1.4.x-green.svg)
+![wp-cli 1.5.x](https://img.shields.io/badge/wp-cli-1.5.x-green.svg)
+
 ```
  __          _______  _      _ _       ____
  \ \        / /  __ \| |    (_) |     |  _ \
