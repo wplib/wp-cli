@@ -5,15 +5,6 @@
 ![wp-cli 1.4.x](https://img.shields.io/badge/wpcli-1.4.x-green.svg)
 ![wp-cli 1.5.x](https://img.shields.io/badge/wpcli-1.5.x-green.svg)
 
-```
- __          _______  _      _ _       ____
- \ \        / /  __ \| |    (_) |     |  _ \
-  \ \  /\  / /| |__) | |     _| |__   | |_) | _____  __
-   \ \/  \/ / |  ___/| |    | | '_ \  |  _ < / _ \ \/ /
-    \  /\  /  | |    | |____| | |_) | | |_) | (_) >  <
-     \/  \/   |_|    |______|_|_.__/  |____/ \___/_/\_\
-```
-
 ![WPLib-Box](https://github.com/wplib/wplib.github.io/raw/master/WPLib-Box-100x.png)
 
 
