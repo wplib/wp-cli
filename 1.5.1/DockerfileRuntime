@@ -1,20 +1,22 @@
 # This is to be run from the base O/S using the files/usr/local/bin/wp-x.x.x script.
 
 FROM php:7.0-alpine
+# FROM wplib/php:7.0
 
 MAINTAINER WPLib Team <team@wplib.org>
 
-ARG WPCLI_VERSION=1.0.0
+ARG WPCLI_VERSION=1.5.1
 ENV HOME /root
-ENV DEBIAN_FRONTEND noninteractive
+COPY files /
 
 RUN curl -q -L https://github.com/wp-cli/wp-cli/releases/download/v$WPCLI_VERSION/wp-cli-$WPCLI_VERSION.phar -o wp-cli.phar && \
-	docker-php-ext-install mysqli && \
 	apk update && \
-	apk add --no-cache sudo ncurses less && \
-	cp wp-cli.phar /usr/local/bin/wp && \
-	chmod +x /usr/local/bin/wp && \
-	ln -s /usr/bin/php7 /usr/bin/php
+	apk add --no-cache sudo ncurses less git && \
+	mv wp-cli.phar /usr/local/bin/wp.bin && \
+	chmod +x /usr/local/bin/wp* && \
+	/usr/local/bin/wp --allow-root package install git@github.com:wp-cli/profile-command.git
+# https://github.com/wp-cli/profile-command.git
+
 
 COPY container.json /etc/container.json
 WORKDIR /var/www
