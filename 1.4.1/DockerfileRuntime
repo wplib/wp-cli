@@ -6,12 +6,12 @@ MAINTAINER WPLib Team <team@wplib.org>
 
 ARG WPCLI_VERSION=1.4.1
 ENV HOME /root
-ENV DEBIAN_FRONTEND noninteractive
+ENV CLI_HOST wplib-box
 
 RUN curl -q -L https://github.com/wp-cli/wp-cli/releases/download/v$WPCLI_VERSION/wp-cli-$WPCLI_VERSION.phar -o wp-cli.phar && \
 	docker-php-ext-install mysqli && \
 	apk update && \
-	apk add --no-cache sudo ncurses less && \
+	apk add --no-cache sudo ncurses less bash && \
 	mv wp-cli.phar /usr/local/bin/wp.bin && \
 	chmod +x /usr/local/bin/wp* && \
 	ln -s /usr/bin/php7 /usr/bin/php

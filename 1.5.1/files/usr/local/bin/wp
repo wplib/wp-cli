@@ -2,7 +2,7 @@
 
 #ARG1=$1
 #shift
-case $ARG1 in
+case $1 in
 	'TEST')
 		echo "WPLib Box: ERROR: Command currently unsupported."
 		exit
